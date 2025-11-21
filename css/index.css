@@ -1,0 +1,591 @@
+/* banner */
+
+.banner {
+    margin-top: 5px;
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.banner li img {
+
+    width: 1240px;
+    height: 500px;
+}
+
+.banner .wrapper {
+    position: relative;
+    background-color: pink;
+    height: 500px;
+}
+
+/* 侧导航 */
+
+.banner .aside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.banner .aside li {
+    height: 50px;
+    line-height: 50px;
+}
+
+.banner .aside a {
+    position: relative;
+    /* block的宽度和父级一样 */
+    color: #fff;
+    display: block;
+    height: 50px;
+    padding-left: 32px;
+    padding-right: 20px;
+}
+
+.banner .aside a span {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.banner .aside a:hover {
+    background-color: #27ba9b
+}
+
+/* 在a里面的最后面添加小箭头 */
+.banner .aside a::after {
+    position: absolute;
+    right: 9px;
+    top: 16px;
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/向右箭头.png);
+    background-size: contain;
+}
+
+/* banner的箭头 */
+.prev,
+.next {
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+}
+
+.prev {
+    background-image: url(../images/向左箭头.png);
+    opacity: 0.5;
+    background-size: 36px;
+    background-position: center;
+    left: 260px;
+}
+
+.next {
+    background-image: url(../images/向右箭头.png);
+    opacity: 0.5;
+    background-size: 37px;
+    background-position: center;
+    right: 10px;
+}
+
+.prev:hover {
+    background-color: #27ba9b;
+}
+
+.next:hover {
+    background-color: #27ba9b;
+}
+
+.banner ol {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 440px;
+    right: -160px;
+    width: 280px;
+    height: 50px;
+}
+
+.banner ol li {
+    width: 16px;
+    height: 16px;
+    margin-top: 30px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+
+}
+
+.banner ol li:first-child {
+    width: 22px;
+    height: 22px;
+    background-image: url(../uploads/已选中.png);
+    opacity: 0.9;
+    background-size: contain;
+}
+
+.goodnews {
+    height: 540px;
+    /* line-height: 14px; */
+}
+
+.goodnews .hd,
+.topic .hd {
+    height: 80px;
+}
+
+.goodnews .hd h2,
+.brand .hd h2{
+    margin-top: 28px;
+    margin-bottom: 28px;
+    font-size: 33px;
+    float: left;
+}
+
+.goodnews .hd a,
+.brand .hd a {
+    margin-top: 40px;
+    color: #969696;
+    float: right;
+}
+
+.goodnews .hd h2 span,
+.brand .hd h2 span {
+    font-size: 16px;
+    color: #999;
+    margin-left: 34px;
+}
+
+.goodnews .hd a::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    margin-left: 5px;
+    background-image: url(../images/右箭头.png);
+    background-size: 16px;
+}
+
+.goodnews .bd,
+.bsale .bd,
+.brand .bd {
+    gap: 12px;
+    width: 1280px;
+    height: 200px;
+    display: flex;
+    /* background-color: pink; */
+}
+
+.goodnews .box {
+    width: 300px;
+    height: 400px;
+    background-color: #ecf9f2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.goodnews .box img,
+.bsale .box img {
+    width: 304px;
+    height: 304px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.goodnews .box .info,
+.bsale .box .info,
+.brand .box .info {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6px 0;
+}
+
+.goodnews .box .title,
+.bsale .box .title,
+.brand .box .title {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.goodnews .box .price {
+    font-size: 20px;
+    color: #d35400;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+
+.bsale {
+    height: 540px;
+    /* line-height: 14px; */
+}
+
+.bsale .hd {
+    /* margin-left: 110px; */
+    height: 80px;
+}
+
+.bsale .hd h2 {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    font-size: 33px;
+    float: left;
+}
+
+.bsale .hd a {
+    margin-top: 40px;
+    color: #969696;
+    float: right;
+}
+
+.bsale .hd h2 span {
+    font-size: 16px;
+    color: #999;
+    margin-left: 34px;
+}
+
+.bsale .hd a::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    margin-left: 5px;
+    background-image: url(../images/右箭头.png);
+    background-size: 16px;
+}
+
+.bsale .box {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.bsale .box .price {
+    font-size: 16px;
+    color: #969696;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.brand {
+    height: 480px;
+}
+
+.brand .hd {
+    position: relative;
+    height: 80px;
+}
+
+.brand .jiantou {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+}
+
+.brand .jiantou .left,
+.brand .jiantou .right {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 5px;
+}
+
+.brand .jiantou .left{
+    background-image: url(../uploads/left.png);
+}
+
+.brand .jiantou .right{
+    background-image: url(../uploads/right_row.png);
+}
+
+.brand .jiantou .left:hover{
+    background-image: url(../uploads/left_row.png);
+}
+
+.brand .jiantou .right:hover{
+    background-image: url(../uploads/right.png);
+}
+
+.brandbgc {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    background-size: contain;
+}
+
+.brand .box img {
+    width: 244px;
+    height: 304px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.brand .box {
+    width: 237px;
+    height: 310px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.fresh .hd {
+    height: 80px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fresh .hd h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.fresh .hd ul {
+    display: flex;
+    gap: 2px;
+}
+
+.fresh .hd .tail {
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    font-size: 16px;
+    color: #969696;
+    padding: 7px 0;
+    margin-left: 8px;
+    white-space: nowrap;
+}
+
+.fresh .hd .tail::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    margin-left: 5px;
+    background-image: url(../images/右箭头.png);
+    background-size: 16px;
+}
+
+.fresh .hd .rightgroup {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+}
+
+.fresh .hd ul a {
+    display: inline-block;
+    height: 22px;
+    width: 53px;
+    line-height: 22px;
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 8px;
+}
+
+.fresh .rightgroup ul a:hover {
+    background-color: #94d9ca;
+    color: #fff;
+}
+
+.fresh .content {
+    display: flex;
+    width: 1240px;
+    height: 620px;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+/* .fresh .contsent .poster,
+.clothe .content .poster{
+    width: 248px;
+    height: 580px;
+    vertical-align: middle;
+} */
+
+.fresh .content .poster img {
+    width: 248px;
+    height: 610px;
+    object-fit: cover;
+    display: block;
+}
+
+.fresh .content .attach img {
+    width: 190px;
+    height: 171px;
+    object-fit: cover;
+    /* display: block; */
+}
+
+.fresh .content .attach {
+    display: flex;
+    width: 968px;
+    height: 610px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fresh .content .box {
+    width: 242px;
+    height: 305px;
+}
+
+.fresh .content .box .info {
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 19px;
+}
+
+.fresh .content .box span {
+    font-size: 22px;
+    line-height: 45px;
+    color: #AF2F22;
+}
+
+.topic {
+    height: 507px;
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.topic .hd a {
+    display: flex;
+    align-items: center;
+    color: #969696;
+    margin-left: auto;
+}
+
+/* .topic .hd .tail{
+    margin-left: px;
+} */
+
+.topic .hd a::after {
+    content: '';
+    display: flex;
+    width: 20px;
+    height: 14px;
+    margin-left: 5px;
+    background-image: url(../images/右箭头.png);
+    background-size: 16px;
+    background-position: center;
+    vertical-align: middle;
+}
+
+.topic .hd {
+    display: flex;
+    width: 1240px;
+    height: 45px;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.topic .hd h2 {
+    font-size: 33px;
+    margin: 0;
+    padding: 0;
+}
+
+.topic .content {
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+    flex-wrap: nowrap;
+}
+
+.topic .box {
+    display: flex;
+    width: 405px;
+    height: 345px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topic .box img {
+    width: 405px;
+    height: 288px;
+    object-fit: cover;
+    display: block;
+}
+
+.topic .box .detail {
+    margin-top: auto;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #969696;
+}
+
+.topic .box .detail span{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.topic .box .like::before{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    content: '';
+    background-image: url(../uploads/收藏.png);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.topic .box .view::before{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    content: '';
+    background-image: url(../uploads/浏览.png);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.topic .box .comment::before{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    content: '';
+    background-image: url(../uploads/评论.png);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.topic .box .view {
+    margin-right: 200px;
+}
